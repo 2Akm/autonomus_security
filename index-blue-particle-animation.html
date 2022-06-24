@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cryptoking is Professional Creative Template" />
+    <!-- SITE TITLE -->
+    <title>Cryptoking - Bitcoin & ICO Cryptocurrency Landing Page HTML Template</title>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Latest Bootstrap min CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="assets/css/ionicons.min.css">
+    <!--- owl carousel CSS-->
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Color CSS -->
+    <link rel="stylesheet" href="assets/color/theme.css">
+
+    <style type="text/css">
+
+        .slider-wrapper {
+    height: 550px;
+    margin: 0 auto 100px auto;
+    position: relative;
+    width: 100%;
+    box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slide1 {
+    background-color: #98FB98;
+}
+
+.slide2 {
+    background-color: #90EE90;
+    background-image: url(img/promo2.png);
+}
+
+.slide3 {
+    background-color: #98FB98;
+    background-image: url(img/promo3.png);
+    color: #eee;
+}
+
+.slide4 {
+    background-color: #90EE90;
+    background-image: url(img/promo4.png);
+}
+
+.slide5 {
+    background-color: #98FB98;
+    color: #ddd;
+    background-image: url(img/promo5.png);
+}
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3,
+#slide4:checked ~ .slider > .slide4,
+#slide5:checked ~ .slider > .slide5 {
+    opacity: 1;
+    z-index: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.slider-wrapper > input {
+    display: none;
+}
+
+.slider-wrapper .controls {
+    left: 50%;
+    margin-left: -98px;
+    position: absolute;
+    margin-top: -30px;
+    z-index: 1;
+}
+
+.slider-wrapper label {
+    cursor: pointer;
+    display: inline-block;
+    height: 12px;
+    margin: 0 12px;
+    position: relative;
+    width: 12px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: background ease-in-out .5s;
+    -moz-transition: background ease-in-out .5s;
+    -o-transition: background ease-in-out .5s;
+    transition: background ease-in-out .5s;
+}
+
+.slider-wrapper label:hover,
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3),
+#slide4:checked ~ .controls label:nth-of-type(4),
+#slide5:checked ~ .controls label:nth-of-type(5) {
+    background: #eee;
+}
+
+.slider-wrapper label:after {
+    border: 2px solid #eee;
+    content: " ";
+    display: block;
+    height: 12px;
+    position: absolute;
+    width: 12px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+.promo {
+        background-size: 0;
+    }
+
+.promo-title {
+        margin-bottom: 10px;
+    }
+.promo-text {
+        margin-top: 0;
+    }
+.img_promo {
+    width: auto;
+    height: 700px;}
+
+.slides {
+    height: inherit;
+    width: 1000px;
+    align-self: center;
+    opacity: 0;
+    position: absolute;
+    width: inherit;
+    z-index: 0;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    -moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    -o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+}
+
+    </style>
+</head>
+
+<body class="v_blue" data-spy="scroll" data-offset="110">
+    <!-- LOADER -->
+    <div class="preloader">
+        <div id="g-spinner" class="loading">
+            <div class="circle c1"></div>
+            <div class="circle c2"></div>
+            <div class="circle c3"></div>
+            <div class="circle c4"></div>
+        </div>
+    </div>
+    <!-- END LOADER -->
+
+    <!-- START HEADER -->
+    <header class="header_wrap fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand page-scroll animation" href="#home" data-animation="fadeInLeft" data-animation-delay="0.8s">
+                    <img class="logo_light" src="assets/images/logo.png" alt="logo" />
+                    <img class="logo_dark" src="assets/images/logo_dark.png" alt="logo" />
+                </a>
+                <button class="navbar-toggler animation" data-animation="fadeInRight" data-animation-delay="1.2s" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="ion-android-menu"></span> </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav animation" data-animation="fadeInDown" data-animation-delay="1.2s" style="font: 30px;">
+                        <li><a class="nav-link page-scroll" href="#how_it_work">О проекте</a></li>
+                        <li><a class="nav-link page-scroll" href="#about">О нас</a></li>
+                        <li><a class="nav-link page-scroll" href="#token">Компоненты</a></li>
+                        <li><a class="nav-link page-scroll" href="#road_map">Галерея</a></li>
+                        <li><a class="nav-link page-scroll" href="#team">Контакты</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- START HEADER -->
+
+    <!-- START SECTION BANNER -->
+    <section id="home" class="banner_section section_gradiant small_pb">
+        <div id="banner_bg_effect" class="banner_effect"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 col-sm-12 order-lg-first text_md_center">
+                    <div class="banner_text">
+                        <h1 class="animation" data-animation="fadeInUp" data-animation-delay="1.5s"><span>Автономная охранная система</span> </h1>
+                        <h3 class="animation" data-animation="fadeInUp" data-animation-delay="1.6s">с SMS-оповещением</h3>
+                        <p class="animation" data-animation="fadeInUp" data-animation-delay="1.7s">Это совокупность взаимодействующих между собой технических устройств, обеспечивающих фиксацию факта постороннего проникновения внутрь охраняемой зоны и подающих при этом тревожный сигнал.</p>
+                        <div class="banner_btn animation" data-animation="fadeInUp" data-animation-delay="1.8s">
+                            <!--a href="#whitepaper" class="btn btn-default page-scroll nav-link">Whitepapter <i class="ion-ios-arrow-thin-right"></i></a>
+                            <a href="#" class="btn btn-border">Buy Token Now! <i class="ion-ios-arrow-thin-right"></i></a--> </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 order-first">
+                    <div class="banner_image_right res_md_mb_50 res_xs_mb_30 animation" data-animation="fadeInRight" data-animation-delay="1.5s">
+                        <img src="assets/images/banner_vector2.png" alt="banner_vector2" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION BANNER -->
+
+    <!-- START SECTION HOW IT WORK -->
+    <section id="how_it_work" class="how_work small_pt small_pb" data-parallax="scroll" data-image-src="assets/images/team_bg2.png">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <div class="title_light">
+                        <h2 class="animation" data-animation="fadeInUp" data-animation-delay="0.1s">О проекте</h2>
+                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">На сегодняшний день предприятия ставят вопрос о безопасности как работников, так и своего имущества, в том числе информации. Одним из главных методов обеспечения защиты от несанкционированного проникновения на территорию предприятия является система охранной сигнализации.</p>
+                    </div>
+                    <a href="#road_map" class="btn btn-default page-scroll animation" data-animation="fadeInUp" data-animation-delay="0.3s">Смотреть галерею <i class="ion-ios-arrow-thin-right"></i></a> </div>
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <div class="work_box animation" data-animation="fadeInUp" data-animation-delay="0.4s">
+                        <div class="box_inner"> <i class="ion-person-add"></i>
+                            <h4>Актуальность</h4>
+                            <p>Все предприятия и организации заинтересованы в безопасности своего имущества, защите информационных и материальных ресурсов от краж и ущерба, а также персонала от нанесения вреда здоровью и жизни. </p>
+                        </div>
+                    </div>
+                    <div class="work_box animation" data-animation="fadeInUp" data-animation-delay="0.5s">
+                        <div class="box_inner"> <i class="ion-ios-locked"></i>
+                            <h4>Цель</h4>
+                            <p>Проектирование и разработка модели автономной охранной системы с различными датчиками и SMS-оповещением. </p>
+                        </div>
+                    </div>
+                    <div class="work_box animation" data-animation="fadeInUp" data-animation-delay="0.6s">
+                        <div class="box_inner"> <i class="ion-android-cart"></i>
+                            <h4>Объект и предмет</h4>
+                            <p>Объект - любые предприятия или организации, заинтересованные в защите своего имущества.</p>
+<p>Предмет - модель автономной охранной системы с различными датчиками и SMS-оповещением.
+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shape shap5"></div>
+    </section>
+    <!-- END SECTION HOW IT WORK -->
+
+    <!-- START SECTION ABOUT US -->
+    <section id="about" class="small_pt small_pb">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="animation res_sm_mb_30" data-animation="fadeInLeft" data-animation-delay="0.1s">
+                        <img src="assets/images/about_img2.png" alt="aboutimg" />
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="title_light">
+                        <h2 class="animation" data-animation="fadeInUp" data-animation-delay="0.1s">О нас</h2>
+                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Мы студенты Оскольского политехнического колледжа, обучаемся на Отделении информационных технологий. Еще с самого детства нас интересовали такие предметы, как информатика, физика и математика, а также программирование и робототехника.</p>
+                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.5s">Когда пришло время писать курсовую работу, мы проанализировали различные предметные области и выяснили, что проблема безопасности является одной из самых актуальных. Мы решили внести свой вклад в данную область и разработали собственную автономную систему сигнализации. В отличие от большинства аналогов, она содержит сразу несколько различных датчиков, такие как датчик движения, освещенности, температуры и т.д. Ознакомиться с разработкой Вы можете на данном сайте.</p>
+                    </div>
+                    <!--a href="https://www.youtube.com/watch?v=ZE2HxTmxfrI" class="btn btn-default video animation" data-animation="fadeInUp" data-animation-delay="0.6s"><span class="ion-play"></span>Let's Start <i class="ion-ios-arrow-thin-right"></i></a--> </div>
+            </div>
+            <div class="divider large_divider"></div>
+            <div class="row text-center">
+                <div class="col-lg-8 col-md-12 offset-lg-2">
+                    <div class="title_light">
+                        <span class="animation" data-animation="fadeInUp" data-animation-delay="0.1s">Ещё немного о нас</span>
+                        <h2 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">Наши достижения</h2>
+                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">Competitive advantages are conditions that allow a company or country to produce a good or service at equal value but at a lower price or in a more desirable fashion</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center small_space benefit_wrap">
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="benefit_box animation" data-animation="fadeInUp" data-animation-delay="0.1s">
+                        <img src="assets/images/secure.png" alt="secure" />
+                        <h6>Safe & Secure</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="benefit_box animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+                        <img src="assets/images/token.png" alt="token" />
+                        <h6>Excerpt Tokens</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="benefit_box animation" data-animation="fadeInUp" data-animation-delay="0.3s">
+                        <img src="assets/images/payment.png" alt="payment" />
+                        <h6>Easy Payment</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="benefit_box animation" data-animation="fadeInUp" data-animation-delay="0.4s">
+                        <img src="assets/images/case.png" alt="case" />
+                        <h6>Daily Cash Outs</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="benefit_box animation" data-animation="fadeInUp" data-animation-delay="0.5s">
+                        <img src="assets/images/app.png" alt="app" />
+                        <h6>Smart Application</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="benefit_box animation" data-animation="fadeInUp" data-animation-delay="0.6s">
+                        <img src="assets/images/dilution.png" alt="dilution" />
+                        <h6>NO DILUTION</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION ABOUT US -->
+
+    <!-- START SECTION TOKEN -->
+    <section id="token" class="section_token small_pt small_pb">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12 col-sm-12 text_md_center">
+                    <div class="title_light">
+                        <span class="animation" data-animation="fadeInUp" data-animation-delay="0.1s">Из чего состоит проект</span>
+                        <h2 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">Компоненты</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="pr_box animation" data-animation="fadeInUp" data-animation-delay="0.1s">
+                                <h6>Плата :</h6>
+                                <p>Arduino Pro mini 3.3V 8MHz</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="pr_box animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+                                <h6>Резисторы :</h6>
+                                <p>300k - 2шт, 4,7k -10шт, 1M - 2шт</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="pr_box animation" data-animation="fadeInUp" data-animation-delay="0.5s">
+                                <h6>Конденсаторы :</h6>
+                                <p>0.1 мкФ - 4шт, 1000мкФ - 1шт, 33мкФ - 1шт</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="pr_box animation" data-animation="fadeInUp" data-animation-delay="0.6s">
+                                <h6>Диоды и транзисторы :</h6>
+                                <p>MBR0520LT - 4шт, 1N4148W - 1шт, тр.IRLML6401 - 1шт</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="pr_box animation" data-animation="fadeInUp" data-animation-delay="0.3s">
+                                <h6>Датчики :</h6>
+                                <p>Датчик движения MH-SR602 mini, GSM модуль SIM800L, DS3231 RTC модуль, геркон, фоторезистор</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="pr_box animation" data-animation="fadeInUp" data-animation-delay="0.4s">
+                                <h6>Прочее :</h6>
+                                <p>Микрофон, отсек для батареек 3 АА, зуммер, магнит, фанера, паяльный набор</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-0 col-md-8 offset-md-2 text_md_center res_md_mt_30">
+                    <div class="title_light">
+                    	<br>
+                        <span class="animation" data-animation="fadeInUp" data-animation-delay="0.1s" style="padding-left: 130px; padding-top: 50px;">Электрическая схема</span>
+                        <br>
+                        <a href="assets/images/электрическая.png"><img src="assets/images/электрическая.png" style="margin: 10px; padding: 10px, 50px; width: 150%; height: 150%"></a>
+                    </div>
+    </section>
+    <!-- END SECTION TOKEN -->
+
+    <!-- START SECTION TIMELINE & MOBILE APP -->
+    <section id="road_map" class="small_pt small_pb">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-8 col-md-12 offset-lg-2">
+                    <div class="title_light">
+                        <span class="animation" data-animation="fadeInUp" data-animation-delay="0.1s">Галерея</span>
+                        <h2 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">Фотографии проекта</h2>
+                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">В процессе разработки мы фотографировали, как выглядел проект на различных этапах. Ознакомиться с фотографиями Вы можете здесь!</p>
+                    </div>
+                </div>
+            </div>
+            <section class="slider-wrapper">
+                <input id="slide1" name="point" type="radio">
+                <input checked id="slide2" name="point" type="radio">
+                <input id="slide3" name="point" type="radio">
+                <input id="slide4" name="point" type="radio">
+                <input id="slide5" name="point" type="radio">
+                <div class="slider"><div class="slides slide1 promo">
+                    <img  class="img_promo" src="assets/images/galary3.png" align="center" style="width: 100%; height: 100%; border: 1px white solid;">
+                </div>
+                <div class="slides slide5 promo">
+                    <img  class="img_promo" src="assets/images/galary4.png" align="center" style="width: 100%; height: 100%; border: 1px white solid;">
+                </div>
+                <div class="slides slide3 promo">
+                    <img  class="img_promo" src="assets/images/galary1.png" align="center" style="width: 100%; height: 100%; border: 1px white solid;">
+                </div>
+                <div class="slides slide4 promo">
+                    <img  class="img_promo" src="assets/images/galary2.png" align="center" style="width: 100%; height: 100%; border: 1px white solid;">
+                </div>
+
+                <div class="slides slide2 promo">
+                    <img  class="img_promo" src="assets/images/galary5.png" align="center" style="width: 100%; height: 100%; border: 1px white solid;">
+                </div>
+                </div>
+                <div class="controls">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                    <label for="slide5"></label>
+                </div>
+                </section>
+        </div>
+    </section>
+    <!-- END SECTION TIMELINE & MOBILE APP -->
+
+    <!-- START SECTION TEAM -->
+    <section id="team" class="team_wrap small_pt small_pb" data-parallax="scroll" data-image-src="assets/images/team_bg2.png">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-8 col-md-12 offset-lg-2">
+                    <div class="title_light">
+                        <span class="animation" data-animation="fadeInUp" data-animation-delay="0.1s">Контакты</span>
+                        <h2 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">Проект создан при поддержке:</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row small_space">
+                <div class="col-lg-3 col-md-6 col-sm-6 res_md_mb_30">
+                    <div class="team_box animation" data-animation="fadeInUp" data-animation-delay="0.05s">
+                        <div class="team_img text-center">
+                            <img src="assets/images/AlinaSM.png" alt="user_img" />
+                        </div>
+                        <div class="team_info text-center">
+                            <h4><a href="#team1" class="content-popup"><p>Капленко</p><p> Алина</p></a></h4>
+                            <p>Студент ОИТ</p>
+                        </div>
+                        <div id="team1" class="team_pop mfp-hide">
+                            <div class="row m-0">
+                                <div class="col-md-6"> <img class="w-100 pt-3 pb-3" src="assets/images/Alina.png" alt="user_img-lg" /> </div>
+                                <div class="col-md-6">
+                                    <div class="pt-3 pb-3">
+                                        <div class="title_dark"> <span>Студент ОИТ</span>
+                                            <h2>Капленко Алина</h2>
+                                        </div>
+                                        <p>Ещё с раннего детства интересовалась математикой и другими точными науками. В программирование пришла в возрасте 15 лет, начав разрабатывать свою первую компьютерную игру, после чего решила поступать на ОИТ. Отличник, активист.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 res_md_mb_30">
+                    <div class="team_box animation" data-animation="fadeInUp" data-animation-delay="0.4s">
+                        <div class="team_img text-center">
+                            <img src="assets/images/NastyaSM.png" alt="user_img" />
+                        </div>
+                        <div class="team_info text-center">
+                            <h4><a href="#team2" class="content-popup">Мелентьева Анастасия</a></h4>
+                            <p>Студент ОИТ</p>
+                        </div>
+                        <div id="team2" class="team_pop mfp-hide">
+                            <div class="row m-0">
+                                <div class="col-md-6"> <img class="w-100 pt-3 pb-3" src="assets/images/Nastya.png" alt="user_img-lg" /> </div>
+                                <div class="col-md-6">
+                                    <div class="pt-3 pb-3">
+                                        <div class="title_dark"> <span>Студент ОИТ</span>
+                                            <h2>Мелентьева Анастасия</h2>
+                                        </div>
+                                        <p>Заинтересовавшись физикой ещё в школьные годы, решила связать свою жизнь именно с ней. Из сферы IT больше всего любит писать сайты и делать презентации. Отличница, живёт активной студенческой жизнью.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 res_xs_mb_30">
+                    <div class="team_box animation" data-animation="fadeInUp" data-animation-delay="0.7s">
+                        <div class="team_img text-center">
+                            <img src="assets/images/DDSM.png" alt="user_img" />
+                        </div>
+                        <div class="team_info text-center">
+                            <h4><a href="#team3" class="content-popup">Артюхина Дарья Дмитриевна</a></h4>
+                            <p>Руководитель проекта</p>
+                        </div>
+                        <div id="team3" class="team_pop mfp-hide">
+                            <div class="row m-0">
+                                <div class="col-md-6"> <img class="w-100 pt-3 pb-3" src="assets/images/DD.png" alt="user_img-lg" /> </div>
+                                <div class="col-md-6">
+                                    <div class="pt-3 pb-3">
+                                        <div class="title_dark"> <span>Руководитель проекта</span>
+                                            <h2>Артюхина Дарья Дмитриевна</h2>
+                                        </div>
+                                        <p>Дарья Дмитриевна - преподаватель нового поколения!
+                                        Кроме неоспоримых профессиональных качеств она обладает отличными личными достоинствами. Её занятия дали нам огромный толчок в изучении профессии.
+                                        У неё есть все качества отличного преподавателя - прекрасное знание предметов, умение найти правильный подход к студентам, и наконец - она просто замечательный человек. 
+
+
+                                         </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="team_box animation" data-animation="fadeInUp" data-animation-delay="1s">
+                        <div class="team_img text-center">
+                            <img src="assets/images/user_img5.jpg" alt="user_img" />
+                        </div>
+                        <div class="team_info text-center">
+                            <h4><a href="#team4" class="content-popup">Коренькова Татьяна Николаевна</a></h4>
+                            <p>Заведующая ОИТ</p>
+                        </div>
+                        <div id="team4" class="team_pop mfp-hide">
+                            <div class="row m-0">
+                                <div class="col-md-6"> <img class="w-100 pt-3 pb-3" src="assets/images/user_img-lg5.jpg" alt="user_img-lg" /> </div>
+                                <div class="col-md-6">
+                                    <div class="pt-3 pb-3">
+                                        <div class="title_dark"> <span>Заведующая ОИТ</span>
+                                            <h2>Коренькова Татьяна Николаевна</h2>
+                                        </div>
+                                        <p>Главная ценность преподавательского таланта Татьяны Николаевны это способность поддержать интерес к профессии, показать её многообразие и постоянное обновление в контексте современной жизни.
+                                        Помимо неоспоримых профессиональных качеств, хотелось бы отметить особый подход к каждому студенту, умение подать даже самый непростой материал в увлекательной и доступной форме.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider large_divider"></div>
+            
+    <!-- END FOOTER SECTION -->
+
+    <a href="#" class="scrollup btn-default animation" data-animation="zoomIn" data-animation-delay="0.1s" style="display: none;"><i class="ion-ios-arrow-up"></i></a>
+
+    <!-- Latest jQuery -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <!-- Latest compiled and minified Bootstrap -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- owl-carousel min js  -->
+    <script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
+    <!-- magnific-popup min js  -->
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <!-- waypoints min js  -->
+    <script src="assets/js/waypoints.min.js"></script>
+    <!-- parallax js  -->
+    <script src="assets/js/parallax.js"></script>
+    <!-- countdown js  -->
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <!-- particles min js  -->
+    <script src="assets/js/particles.min.js"></script>
+    <!-- chart js  -->
+    <script src="assets/js/Chart.bundle.js"></script>
+    <script src="assets/js/Chart.PieceLabel.min.js"></script>
+    <script src="assets/js/chart_script.js"></script>
+    <!-- scripts js -->
+    <script src="assets/js/scripts.js"></script>
+
+</body>
+
+</html>
